@@ -50,7 +50,7 @@ export default function Home({navigation}) {
                 />
             </View>
 
-            <AllProds />
+            <AllProds navigation={navigation} />
             
         </ScrollView>
       

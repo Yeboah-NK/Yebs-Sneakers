@@ -7,6 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LogIn from './screens/login';
 import Cart from './screens/cart';
+import ProdDetails from './screens/prodDetails';
 
 export default function App() {
 
@@ -17,7 +18,9 @@ export default function App() {
         <Stack.Screen  name='Welcome' component={Welcome} options ={{headerShown:false}}/>
         <Stack.Screen  name='LogIn' component={LogIn} options ={{headerShown:false}}/>
         <Stack.Screen name='Cart' component={Cart} option ={{headerShown:false}}/> 
-         <Stack.Screen  name='Home' component={Home} options ={{headerShown:false}} />
+        <Stack.Screen  name='Home' component={Home} options ={{headerShown:false}} />
+        <Stack.Screen name='ProdDetails' component={ProdDetails} options={{headerShown:false}} />
+
 
         </Stack.Navigator>
     </NavigationContainer>
